@@ -9,9 +9,9 @@ A go-lang module to make a JSON minimized and beautify it
 * upload this on github repo to use it
 
 ### Helping material
-[go-modules](https://dev.to/kingkunte_/go-modules-beginners-guide-4a7p#:~:text=In%20the%20Go%20programming%20language,in%20the%20module's%20root%20directory.)
-[packages-working](https://www.youtube.com/watch?v=gwimC8T9kok&list=PLXQpH_kZIxTWUe-Ee-DZEX5gfeoo4tHV6&index=30)
-[what is panic](https://gobyexample.com/panic)
-[buffer](https://pkg.go.dev/bytes#example-Buffer)
-[encoding-JSON](https://pkg.go.dev/encoding/json)
-[testing-package](https://pkg.go.dev/testing)
+* [go-modules](https://dev.to/kingkunte_/go-modules-beginners-guide-4a7p#:~:text=In%20the%20Go%20programming%20language,in%20the%20module's%20root%20directory.)
+* [packages-working](https://www.youtube.com/watch?v=gwimC8T9kok&list=PLXQpH_kZIxTWUe-Ee-DZEX5gfeoo4tHV6&index=30)
+* [what is panic](https://gobyexample.com/panic)
+* [buffer](https://pkg.go.dev/bytes#example-Buffer)
+* [encoding-JSON](https://pkg.go.dev/encoding/json)
+* [testing-package](https://pkg.go.dev/testing)
