@@ -15,3 +15,4 @@ A go-lang module to make a JSON minimized and beautify it
 * [buffer](https://pkg.go.dev/bytes#example-Buffer)
 * [encoding-JSON](https://pkg.go.dev/encoding/json)
 * [testing-package](https://pkg.go.dev/testing)
+* [usecase for byte](https://stackoverflow.com/questions/10826651/when-to-use-byte-or-string-in-go)
