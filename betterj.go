@@ -6,7 +6,6 @@ import (
 )
 
 func MinifyJ(j string) (string, error) {
-
 	//I used the bytes.buffer because its dynamic and works good with compact and indent
 	var buffer bytes.Buffer
 
@@ -19,7 +18,9 @@ func MinifyJ(j string) (string, error) {
 }
 
 func BeautifyJ(j string, indentWith string) (string, error) {
+
 	var buffer bytes.Buffer
+
 	//json.Indent will format the JSON with custom indentation
 	if err := json.Indent(&buffer, []byte(j), "", indentWith); err != nil {
 		return "", err
