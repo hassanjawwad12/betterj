@@ -3,11 +3,18 @@ package betterj
 import (
 	"bytes"
 	"encoding/json"
+	"errors"
 )
 
 // I used the bytes.buffer because its dynamic and works good with compact and indent
 
 func MinifyJ(j string) (string, error) {
+
+	// check for j being empty array
+	if j == "[]" {
+		return "[]", nil
+	}
+
 	var buffer bytes.Buffer
 
 	// json string converted to bytes for the compact function
@@ -22,6 +29,17 @@ func MinifyJ(j string) (string, error) {
 }
 
 func BeautifyJ(j string, indentWith string) (string, error) {
+
+	// validation for indentWith
+	if indentWith == "" {
+		return "", errors.New("empty indentation string provided")
+	}
+
+	// check for j being empty array
+	if j == "[]" {
+		return "[]", nil
+	}
+
 	var buffer bytes.Buffer
 
 	bytesData := []byte(j)
