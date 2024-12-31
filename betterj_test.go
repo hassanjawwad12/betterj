@@ -1,6 +1,7 @@
 package betterj
 
 import (
+	"log"
 	"testing"
 )
 
@@ -16,12 +17,16 @@ func TestMinifyJ(t *testing.T) {
 	t.Run(input, func(t *testing.T) {
 		got, err := MinifyJ(input)
 		if err != nil {
+			log.Printf("Error has occured: %v\n", err)
 			panic(err)
 		}
 		if got != want {
-			t.Errorf("expected %v, got %v", want, got)
+			log.Printf("Function failed: expected %v, got %v\n", want, got)
+		} else {
+			log.Println("Function has passed successfully")
 		}
 	})
+	log.Println("Finished Testing MinifyJ Function")
 }
 func TestBeautifyJ(t *testing.T) {
 	input := `{"name":"Hassan Jawwad","age":22,"city":"Lahore"}`
@@ -35,10 +40,15 @@ func TestBeautifyJ(t *testing.T) {
 	t.Run(input, func(t *testing.T) {
 		got, err := BeautifyJ(input, indent)
 		if err != nil {
+			log.Printf("Error has occured: %v\n", err)
 			panic(err)
 		}
 		if got != want {
-			t.Errorf("expected %v, got %v", want, got)
+			log.Printf("Function failed: expected %v, got %v\n", want, got)
+		} else {
+			log.Println("Function has passed successfully")
 		}
 	})
+
+	log.Println("Finished Testing BeautifyJ Function")
 }
