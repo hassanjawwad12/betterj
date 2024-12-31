@@ -1,5 +1,5 @@
 # betterj
-A go-lang module to make a JSON minimized and beautify it 
+A golang module to make a JSON minimized and beautify it 
 
 ### Steps to Follow
 * Create a folder 
